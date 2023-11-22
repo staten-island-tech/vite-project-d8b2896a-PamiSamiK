@@ -81,5 +81,13 @@ single:true
     lastname: "Zheng",
     nationality: "chinese",
     single:true
+},
+
+{
+    firstname:"Yan",
+    lastname:"Sharma",
+    narionality:"Indian",
+    single:true
 }
 ]
+export {peopel}
