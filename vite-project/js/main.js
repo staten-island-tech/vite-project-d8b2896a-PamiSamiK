@@ -1,6 +1,6 @@
 
-
-import { peopel } from "./array.js";
+import "../css/style.css"
+import { people } from "./array.js";
 
 const DOMSelectors = {
   gallery: document.querySelector('#gallery'),
@@ -11,47 +11,39 @@ const DOMSelectors = {
 };
 
 function injectCards() {
-  peopel.forEach(person => {
-    const cardDiv = document.createElement("div");
-    cardDiv.className = "card";
- 
- 
-    cardDiv.innerHTML = `
+  DOMSelectors.gallery.insertAdjacentHTML
+  `
       <h2>${person.firstname} ${person.lastname}</h2>
       <p>Nationality: ${person.nationality}</p>
       <p>Single: ${person.single ? 'Yes' : 'No'}</p>
       <!--yasss-->
  
- 
-      <button class="remove-button">Remove</button>
     `;
+   };
  
- 
-    DOMSelectors.gallery.appendChild(cardDiv);
-  });
- }
+ injectCards()
  
  
  window.addEventListener('DOMContentLoaded', injectCards);
 
 
 function filterByFirstName(firstName) {
-  const filteredPeople = peopel.filter(person => person.firstname.toLowerCase() === firstName.toLowerCase());
+  const filteredPeople = people.filter(person => person.firstname.toLowerCase() === firstName.toLowerCase());
   injectCards(filteredPeople);
 }
 
 function filterByLastName(lastName) {
-  const filteredPeople = peopel.filter(person => person.lastname.toLowerCase() === lastName.toLowerCase());
+  const filteredPeople = people.filter(person => person.lastname.toLowerCase() === lastName.toLowerCase());
   injectCards(filteredPeople);
 }
 
 function filterByNationality(nationality) {
-  const filteredPeople = peopel.filter(person => person.nationality.toLowerCase() === nationality.toLowerCase());
+  const filteredPeople = people.filter(person => person.nationality.toLowerCase() === nationality.toLowerCase());
   injectCards(filteredPeople);
 }
 
 function filterBySingleStatus(isSingle) {
-  const filteredPeople = peopel.filter(person => person.single === isSingle);
+  const filteredPeople = people.filter(person => person.single === isSingle);
   injectCards(filteredPeople);
 }
 
@@ -84,4 +76,4 @@ DOMSelectors.filterSingle.addEventListener('click', () => {
 });
 
 // Initially display all cards
-injectCards(peopel);
+injectCards(people);
