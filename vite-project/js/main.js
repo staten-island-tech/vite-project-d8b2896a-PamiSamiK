@@ -11,11 +11,12 @@ const DOMSelectors = {
 };
 
 function injectCards() {
+  console.log(DOMSelectors.gallery)
   DOMSelectors.gallery.insertAdjacentHTML
-  `
-      <h2>${person.firstname} ${person.lastname}</h2>
-      <p>Nationality: ${person.nationality}</p>
-      <p>Single: ${person.single ? 'Yes' : 'No'}</p>
+    "beforebegin",`
+      <h2>${people.firstname} ${people.lastname}</h2>
+      <p>Nationality: ${people.nationality}</p>
+      <p>Single: ${people.single ? 'Yes' : 'No'}</p>
       <!--yasss-->
  
     `;
@@ -26,7 +27,7 @@ function injectCards() {
  
  window.addEventListener('DOMContentLoaded', injectCards);
 
-
+/*
 function filterByFirstName(firstName) {
   const filteredPeople = people.filter(person => person.firstname.toLowerCase() === firstName.toLowerCase());
   injectCards(filteredPeople);
@@ -74,6 +75,6 @@ DOMSelectors.filterSingle.addEventListener('click', () => {
     filterBySingleStatus(isSingle);
   }
 });
-
+*/
 // Initially display all cards
 injectCards(people);
