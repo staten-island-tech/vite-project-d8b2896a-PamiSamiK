@@ -1,6 +1,6 @@
 
 import "../css/style.css"
-import { people } from "./array.js";
+import { peoples } from "./array.js";
 
 const DOMSelectors = {
   gallery: document.querySelector('#gallery'),
@@ -11,16 +11,18 @@ const DOMSelectors = {
 };
 
 function injectCards() {
-  console.log(DOMSelectors.gallery)
-  DOMSelectors.gallery.insertAdjacentHTML
-    "beforebegin",`
-      <h2>${people.firstname} ${people.lastname}</h2>
-      <p>Nationality: ${people.nationality}</p>
-      <p>Single: ${people.single ? 'Yes' : 'No'}</p>
-      <!--yasss-->
- 
-    `;
-   };
+  peoples.forEach((people) => {
+  
+  DOMSelectors.gallery.insertAdjacentHTML("beforebegin",`
+  <h2>${people.firstname} ${people.lastname}</h2>
+  <p>Nationality: ${people.nationality}</p>
+  <p>Single: ${people.single}</p>
+  <!--yasss-->
+
+`)
+    ;
+   });
+  }
  
  injectCards()
  

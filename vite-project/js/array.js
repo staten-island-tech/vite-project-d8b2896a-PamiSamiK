@@ -1,4 +1,4 @@
-const people = [
+const peoples = [
     {
     firstname:"Pamithi",
     lastname:"Samaththuwa",
@@ -11,7 +11,7 @@ const people = [
     firstname:"Georgia",
     lastname:"DiPietro",
     nationality: "Italian",
-    single:false
+    single:false 
 },
 
 {
@@ -91,5 +91,5 @@ single:true
     single:true
 }
 ]
-export {people}
+export {peoples}
 
