@@ -4,14 +4,15 @@ const peoples = [
     lastname:"Samaththuwa",
     nationality: "Sinhalese",
     single:true,
-    image:""
+    image:"js/pami.JPG"
     
 },
 {
     firstname:"Georgia",
     lastname:"DiPietro",
     nationality: "Italian",
-    single:false 
+    single:false ,
+    image:"js/georgia.jpg"
 },
 
 {
@@ -19,76 +20,102 @@ const peoples = [
     lastname:"Mohammed",
     nationality: "Egyptian",
     single:true,
+    image:"js/omar.jpg"
 },
 {
     firstname:"June",
     lastname:"Ka",
     nationality: "Filchi",
-    single:true
+    single:true,
+    image:"js/june.jpeg"
 },
 
 {
     firstname:"Jolene",
     lastname:"Xiong",
     nationality :"Chinese",
-    single:true
+    single:true,
+    image:"js/jolene.jpeg"
 },
 {
     firstname:"Jane",
     lastname:"La Duca",
     nationality:"Italian",
-    single:true
+    single:true,
+    image:"js/jane.jpeg"
 
 },
 { 
     firstname:"Sasha",
     lastname:"Aleykson",
     nationality: "Uzbek",
-    single:false
+    single:false,
+    image:"js/sasha.JPEG"
 },
 {
     firstname: "Chris",
     lastname: "Thomas",
     nationality: "Indian",
-    single:true
+    single:true,
+    image:"js/chris.jpeg"
 },
 {
     firstname: "Vinuka",
     lastname: "Dissanayke",
     nationality: "Sinhalese",
-    single:false
+    single:false,
+    image:"js/vinuka.JPEG"
     
 },
 {
 firstname: "Nicholas",
 lastname: "Kumbotavic",
 nationality: "polish",
-single:true
+single:true,
+image:"js/nick.JPEG"
 },
 {
     firstname:"Abdalla",
     lastname: "Wafa",
     nationality: "egyptian",
-    single:true
+    single:true,
+    image:"js/abdalla.jpeg"
 },
 {
     firstname: "Hashim",
     lastname: "Gondal",
     nationlaity: "Pakistani",
-    single:true
+    single:true,
+    image:"js/hashim.JPG"
 },
 {
     firstname: "Ivan",
     lastname: "Zheng",
     nationality: "chinese",
-    single:true
+    single:true,
+    image:"js/ivan.jpg"
 },
 
 {
     firstname:"Yan",
     lastname:"Sharma",
     nationality:"Indian",
-    single:true
+    single:true,
+    image:"js/yan.jpeg"
+},
+{
+    firstname:"Noah",
+    lastname:"Rozin",
+    nationality:"russian",
+    single:true,
+    image:"js/noah.jpeg"
+},
+{
+    firstname:"gabe",
+    lastname:"liberov",
+    nationality:"russian",
+    single:true,
+    image:"js/gabe.jpeg"
 }
 ]
 export {peoples}

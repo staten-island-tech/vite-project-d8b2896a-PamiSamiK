@@ -1,0 +1,46 @@
+..card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #0073fff2;
+  padding: 5px; /* Reduced padding */
+  margin: 5px; /* Reduced margin */
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 2px 2px rgb(169, 145, 255); /* Reduced shadow */
+  width: calc(23% - 10px); /* Adjusted width for slightly wider cards */
+  /* This calculation considers a margin of 5px on each side */
+  min-height: 100px; /* Reduced minimum height */
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1em; /* Reduced font size */
+  margin-bottom: 3px; /* Adjusted margin */
+}
+
+p {
+  margin-bottom: 3px; /* Adjusted margin */
+}
+
+/* Corrected property name to grid-template-columns */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Four columns */
+  gap: 5px; /* Adjusted gap between cards */
+  width: 95%; /* Adjusted the width of the grid */
+  margin: auto;
+}
+/* Light Theme */
+.light {
+  background-color: #ffffff; /* Light background color */
+  color: #eb49c2; /* Dark text color */
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #7c7a7a; /* Dark background color */
+  color: #9a14ed; /* Light text color */
+}
