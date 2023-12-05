@@ -4,7 +4,7 @@ const peoples = [
     lastname:"Samaththuwa",
     nationality: "Sinhalese",
     single:true,
-    image:"public/pami.JPG"
+    image:"/pami.JPG"
     
 },
 {
@@ -12,7 +12,7 @@ const peoples = [
     lastname:"DiPietro",
     nationality: "Italian",
     single:false ,
-    image:"public/georgia.jpg"
+    image:"/georgia.jpg"
 },
 
 {
@@ -20,14 +20,14 @@ const peoples = [
     lastname:"Mohammed",
     nationality: "Egyptian",
     single:true,
-    image:"public/omar.jpg"
+    image:"/omar.jpg"
 },
 {
     firstname:"June",
     lastname:"Ka",
     nationality: "Filchi",
     single:true,
-    image:"public/june.jpeg"
+    image:"/june.jpeg"
 },
 
 {
@@ -35,14 +35,14 @@ const peoples = [
     lastname:"Xiong",
     nationality :"Chinese",
     single:true,
-    image:"public/jolene.jpeg"
+    image:"/jolene.jpeg"
 },
 {
     firstname:"Jane",
     lastname:"La Duca",
     nationality:"Italian",
     single:true,
-    image:"public/jane.jpeg"
+    image:"/jane.jpeg"
 
 },
 { 
@@ -50,21 +50,21 @@ const peoples = [
     lastname:"Aleykson",
     nationality: "Uzbek",
     single:false,
-    image:"public/sasha.JPEG"
+    image:"/sasha.JPEG"
 },
 {
     firstname: "Chris",
     lastname: "Thomas",
     nationality: "Indian",
     single:true,
-    image:"public/chris.jpeg"
+    image:"/chris.jpeg"
 },
 {
     firstname: "Vinuka",
     lastname: "Dissanayke",
     nationality: "Sinhalese",
     single:false,
-    image:"public/vinuka.JPEG"
+    image:"/vinuka.JPEG"
     
 },
 {
@@ -72,28 +72,28 @@ firstname: "Nicholas",
 lastname: "Kumbotavic",
 nationality: "polish",
 single:true,
-image:"public/nick.JPEG"
+image:"/nick.JPEG"
 },
 {
     firstname:"Abdalla",
     lastname: "Wafa",
     nationality: "egyptian",
     single:true,
-    image:"public/abdalla.jpeg"
+    image:"/abdalla.jpeg"
 },
 {
     firstname: "Hashim",
     lastname: "Gondal",
     nationlaity: "Pakistani",
     single:true,
-    image:"public/hashim.JPG"
+    image:"/hashim.JPG"
 },
 {
     firstname: "Ivan",
     lastname: "Zheng",
     nationality: "chinese",
     single:true,
-    image:"public/ivan.jpg"
+    image:"/ivan.jpg"
 },
 
 {
@@ -101,21 +101,21 @@ image:"public/nick.JPEG"
     lastname:"Sharma",
     nationality:"Indian",
     single:true,
-    image:"public/yan.jpeg"
+    image:"/yan.jpeg"
 },
 {
     firstname:"Noah",
     lastname:"Rozin",
     nationality:"russian",
     single:true,
-    image:"public/noah.jpeg"
+    image:"/noah.jpeg"
 },
 {
     firstname:"gabe",
     lastname:"liberov",
     nationality:"russian",
     single:true,
-    image:"public/gabe.jpeg"
+    image:"/gabe.jpeg"
 }
 ]
 export {peoples}

@@ -40,12 +40,18 @@ DOMSelectors.themeButton.addEventListener("click", function() {
 
 
 function filterByNationality(nationality) {
-const filteredPeople = peoples.filter(person => person.nationality.toLowerCase() === nationality.toLowerCase());
+  clearFields(peoples)
+const filteredPeople = peoples.filter(person => String(person.nationality).toLowerCase() === nationality.toLowerCase());
 injectCards(filteredPeople);
 }
 
 
 
+function filterBySingle(single) {
+  clearFields(peoples)
+const filteredPeople = peoples.filter(person => String(person.single).toLowerCase() === single.toLowerCase());
+injectCards(filteredPeople);
+}
 
 window.addEventListener('DOMContentLoaded', () => {
 injectCards(peoples);
@@ -67,3 +73,6 @@ filterByNationality('Sinhalese');
 });
 
 
+DOMSelectors.filterSingle.addEventListener("click", function() {
+  filterBySingle('true');
+  });
