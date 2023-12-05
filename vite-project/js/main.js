@@ -74,5 +74,5 @@ filterByNationality('Sinhalese');
 
 
 DOMSelectors.filterSingle.addEventListener("click", function() {
-  filterBySingle('true');
+  filterBySingle(true);
   });
