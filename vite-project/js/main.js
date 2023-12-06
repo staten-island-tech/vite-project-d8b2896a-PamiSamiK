@@ -4,6 +4,7 @@ const DOMSelectors = {
 gallery: document.querySelector('#gallery'),
 filterItalian: document.querySelector('#filterItalian'),
 filterSinhalese: document.querySelector('#filterSinhalese'),
+filterSingle: document.querySelector(`#filterSingle`),
 themeButton: document.querySelector('#themeButton'),
 };
 console.log(peoples);
@@ -38,18 +39,15 @@ DOMSelectors.themeButton.addEventListener("click", function() {
   }
 });
 
-
 function filterByNationality(nationality) {
   clearFields(peoples)
 const filteredPeople = peoples.filter(person => String(person.nationality).toLowerCase() === nationality.toLowerCase());
 injectCards(filteredPeople);
 }
 
-
-
 function filterBySingle(single) {
   clearFields(peoples)
-const filteredPeople = peoples.filter(person => String(person.single).toLowerCase() === single.toLowerCase());
+const filteredPeople = peoples.filter((person) => person.single === true);
 injectCards(filteredPeople);
 }
 
@@ -57,21 +55,13 @@ window.addEventListener('DOMContentLoaded', () => {
 injectCards(peoples);
 });
 
-
-
-
-
 DOMSelectors.filterItalian.addEventListener("click", function() {
 filterByNationality('Italian');
 });
 
-
-
-
 DOMSelectors.filterSinhalese.addEventListener("click", function() {
 filterByNationality('Sinhalese');
 });
-
 
 DOMSelectors.filterSingle.addEventListener("click", function() {
   filterBySingle(true);
